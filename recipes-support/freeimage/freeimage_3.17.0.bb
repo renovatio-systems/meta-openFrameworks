@@ -3,6 +3,7 @@ SECTION = "webos/support"
 
 #Due to issues with CRLF line endings in LibWebP now using our own fork, so we don't need to patch in OE which caused issues. In future we migth be able to go back to upstream 3.18.0 release directly for example.
 SRC_URI = "git://github.com/webos-ports/FreeImage;branch=herrie/gcc6-arm"
+SRC_URI += "file://dcraw_common_powf.patch"
 
 SRCREV = "c01653d6b12939877e79d2787d3695865e8b1ee3"
 
